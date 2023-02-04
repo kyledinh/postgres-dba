@@ -12,10 +12,10 @@ SEMVER ?= $(shell head -n 1 semver)
 .PHONY: check dev-check env test check postgres setup test-api-fetch
 
 check:
-	@java --version
-	@scala --version 
-	@docker --version
-	@sbt --version
+	bash --version
+	make --version
+	docker --version
+	code --version
 
 dev-check:
 	@echo "dev-check:"
